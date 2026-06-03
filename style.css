@@ -2,13 +2,19 @@ body {
   font-family: Arial, sans-serif;
   background: #e8f5e9;
   margin: 0;
+  padding-bottom: 30px;
 }
 
 header {
-  background: green;
+  background: #2e7d32; /* Um tom de verde mais vivo e moderno */
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px 20px;
+}
+
+main {
+  max-width: 800px; /* Limita a largura em monitores grandes para não espalhar o conteúdo */
+  margin: 0 auto; /* Centraliza a página na tela */
 }
 
 section {
@@ -16,31 +22,56 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Um leve efeito de sombra para destacar os blocos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidade */
 }
 
 img {
   border-radius: 10px;
-  max-width: 100%; /* Garante que a imagem não quebre a tela em dispositivos menores */
-  height: auto;
+  width: 100%; /* Faz a imagem ocupar o espaço disponível */
+  max-width: 700px; /* Mas impede que ela passe do tamanho original */
+  height: auto; /* Mantém a proporção da imagem sem achatar */
 }
 
-iframe {
-  max-width: 100%; /* Garante que o vídeo também seja responsivo */
+/* Técnica para manter os vídeos do YouTube responsivos (proporção 16:9) */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 700px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
 button {
-  background: green;
+  background: #2e7d32;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  transition: background 0.3s ease; /* Efeito suave ao passar o mouse */
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 
+/* Feedback visual interativo para o usuário */
 button:hover {
-  background: #1b5e20; /* Escurece o botão levemente quando o usuário passa o mouse */
+  background: #1b5e20; /* Escurece ligeiramente ao passar o mouse */
+}
+
+button:active {
+  transform: scale(0.98); /* Efeito de clique físico afundando de leve */
+}
+
+audio {
+  width: 100%;
+  max-width: 500px; /* Evita que a barra de áudio estique demais */
 }

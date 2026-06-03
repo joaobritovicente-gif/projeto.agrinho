@@ -1,4 +1,4 @@
-// Aguarda o navegador carregar completamente a estrutura HTML antes de aplicar a lógica
+c// Aguarda o navegador carregar completamente a estrutura HTML antes de aplicar a lógica
 document.addEventListener("DOMContentLoaded", () => {
   
   // Captura todos os botões de opções do Quiz

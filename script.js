@@ -1,26 +1,14 @@
-// Aguarda a página carregar completamente
+// Aguarda o navegador ler todo o HTML antes de executar o script
 document.addEventListener("DOMContentLoaded", () => {
-    
-    // Seleciona o botão que está dentro do link da ecokids
-    const botaoJogar = document.querySelector('a[href*="ecokids.net"] button');
+  
+  // Captura o botão através do ID adicionado no HTML
+  const botaoJogar = document.getElementById("btn-jogar");
 
-    if (botaoJogar) {
-        // Adiciona um evento de clique ao botão
-        botaoJogar.addEventListener("click", () => {
-            // Mensagem secreta no console do navegador (F12)
-            console.log("Boa sorte no jogo! Proteja o meio ambiente! 🍃");
-            
-            // Exemplo de interação: Você pode adicionar um alerta rápido se quiser
-            // alert("Você está sendo redirecionado para o Jogo Educativo!");
-        });
-
-        // Efeito visual extra: uma leve animação ao clicar
-        botaoJogar.addEventListener("mousedown", () => {
-            botaoJogar.style.transform = "scale(0.95)";
-        });
-        
-        botaoJogar.addEventListener("mouseup", () => {
-            botaoJogar.style.transform = "scale(1)";
-        });
-    }
+  if (botaoJogar) {
+    // Adiciona uma ação quando o usuário clica no botão
+    botaoJogar.addEventListener("click", () => {
+      // Registra uma mensagem no console do desenvolvedor (F12)
+      console.log("Usuário clicou para abrir o jogo EcoKids. Divirta-se! 🍃");
+    });
+  }
 });

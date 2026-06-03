@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e8f5e9;
+  margin: 0;
+}
+
+header {
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Um leve efeito de sombra para destacar os blocos */
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%; /* Garante que a imagem não quebre a tela em dispositivos menores */
+  height: auto;
+}
+
+iframe {
+  max-width: 100%; /* Garante que o vídeo também seja responsivo */
+  border-radius: 10px;
+}
+
+button {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+button:hover {
+  background: #1b5e20; /* Escurece o botão levemente quando o usuário passa o mouse */
+}

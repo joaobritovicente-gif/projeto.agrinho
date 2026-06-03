@@ -3,46 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Agrinho</title>
-
+  <title>Projeto Agrinho - Sustentabilidade no Campo</title>
+  
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <header>
-    <h1>Projeto Agrinho</h1>
-    <p>Sustentabilidade no Campo</p>
+    <h1>Agro Forte, Futuro Sustentável</h1>
+    <p>O equilíbrio entre a produção de alimentos e a preservação do meio ambiente</p>
   </header>
 
   <main>
+    
     <section>
-      <h2>Imagem</h2>
-      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Plantação verde sustentável">
+      <h2>Tecnologia e Natureza</h2>
+      <p>O agronegócio moderno utiliza a tecnologia para monitorar plantações, economizar água e reduzir o uso de defensivos químicos, garantindo comida na mesa e florestas preservadas.</p>
+      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Plantação jovem crescendo sob o sol com técnicas de manejo sustentável">
     </section>
 
     <section>
-      <h2>Vídeo</h2>
+      <h2>Conhecimento em Ação</h2>
+      <p>Assista ao vídeo abaixo para entender como as práticas sustentáveis transformam o dia a dia no campo:</p>
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/a6GA8u5stUo" title="Vídeo educativo Agrinho" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/a6GA8u5stUo" title="Vídeo educativo sobre sustentabilidade no Agro" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="quiz-section">
+      <h2>Desafio do Conhecimento: Quiz Sustentável</h2>
+      <p>Mostre que você entende de preservação respondendo à pergunta abaixo:</p>
+      
+      <div class="quiz-container">
+        <p class="pergunta"><strong>Qual das alternativas abaixo representa uma prática do agro sustentável?</strong></p>
+        
+        <div class="opcoes">
+          <button class="btn-opcao" data-correta="false">A) Desmatar áreas ciliares para aumentar o espaço do plantio.</button>
+          <button class="btn-opcao" data-correta="true">B) Usar rotação de culturas e plantio direto para proteger o solo.</button>
+          <button class="btn-opcao" data-correta="false">C) Utilizar água sem controle ou sistemas de gotejamento.</button>
+        </div>
+
+        <div id="resultado-quiz"></div>
       </div>
     </section>
 
     <section>
-      <h2>Jogo Educativo</h2>
-      <a href="https://ecokids.net/pt/" target="_blank">
-        <button id="btn-jogar">Jogar</button>
-      </a>
-    </section>
-
-    <section>
-      <h2>Som da Natureza</h2>
+      <h2>Sons da Natureza no Campo</h2>
+      <p>O equilíbrio ambiental permite que a fauna coexista harmonicamente com as áreas produtivas.</p>
       <audio controls>
         <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
       </audio>
     </section>
+
   </main>
+
+  <footer>
+    <p>Concurso Agrinho 2026 | Subcategoria: Programação Front-End</p>
+    <p class="creditos">Imagens: Unsplash | Áudio: SoundHelix | Conteúdo focado na 1ª Série do Ensino Médio.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

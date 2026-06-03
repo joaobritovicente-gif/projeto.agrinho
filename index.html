@@ -1,77 +1,49 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #e8f5e9;
-  margin: 0;
-  padding-bottom: 30px;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Agrinho</title>
 
-header {
-  background: #2e7d32; /* Um tom de verde mais vivo e moderno */
-  color: white;
-  text-align: center;
-  padding: 25px 20px;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-main {
-  max-width: 800px; /* Limita a largura em monitores grandes para não espalhar o conteúdo */
-  margin: 0 auto; /* Centraliza a página na tela */
-}
+<body>
 
-section {
-  background: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidade */
-}
+  <header>
+    <h1>Projeto Agrinho</h1>
+    <p>Sustentabilidade no Campo</p>
+  </header>
 
-img {
-  border-radius: 10px;
-  width: 100%; /* Faz a imagem ocupar o espaço disponível */
-  max-width: 700px; /* Mas impede que ela passe do tamanho original */
-  height: auto; /* Mantém a proporção da imagem sem achatar */
-}
+  <main>
+    <section>
+      <h2>Imagem</h2>
+      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Plantação verde sustentável">
+    </section>
 
-/* Técnica para manter os vídeos do YouTube responsivos (proporção 16:9) */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; 
-  height: 0;
-  overflow: hidden;
-  max-width: 700px;
-}
+    <section>
+      <h2>Vídeo</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/a6GA8u5stUo" title="Vídeo educativo Agrinho" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
+    <section>
+      <h2>Jogo Educativo</h2>
+      <a href="https://ecokids.net/pt/" target="_blank">
+        <button id="btn-jogar">Jogar</button>
+      </a>
+    </section>
 
-button {
-  background: #2e7d32;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background 0.2s ease, transform 0.1s ease;
-}
+    <section>
+      <h2>Som da Natureza</h2>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    </section>
+  </main>
 
-/* Feedback visual interativo para o usuário */
-button:hover {
-  background: #1b5e20; /* Escurece ligeiramente ao passar o mouse */
-}
-
-button:active {
-  transform: scale(0.98); /* Efeito de clique físico afundando de leve */
-}
-
-audio {
-  width: 100%;
-  max-width: 500px; /* Evita que a barra de áudio estique demais */
-}
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,97 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Projeto Agrinho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Agrinho</title>
 
-<style>
-
-body{
-  font-family:Arial;
-  background:#e8f5e9;
-  margin:0;
-}
-
-header{
-  background:green;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-
-section{
-  background:white;
-  margin:20px;
-  padding:20px;
-  border-radius:10px;
-}
-
-img{
-  border-radius:10px;
-}
-
-button{
-  background:green;
-  color:white;
-  padding:10px 20px;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-}
-
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Projeto Agrinho</h1>
-  <p>Sustentabilidade no Campo</p>
-</header>
+  <header>
+    <h1>Projeto Agrinho</h1>
+    <p>Sustentabilidade no Campo</p>
+  </header>
 
-<section>
-  <h2>Imagem</h2>
+  <main>
+    <section>
+      <h2>Imagem</h2>
+      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Campo verde cultivado">
+    </section>
 
-  <img
-   src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854"
-   width="700">
-</section>
+    <section>
+      <h2>Vídeo</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/a6GA8u5stUo" title="Vídeo do Projeto Agrinho" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
 
-<section>
-  <h2>Vídeo</h2>
+    <section>
+      <h2>Jogo Educativo</h2>
+      <a href="https://ecokids.net/pt/" target="_blank">
+        <button id="btn-jogar">Jogar</button>
+      </a>
+    </section>
 
-  <iframe
-   width="700"
-   height="400"
-   src="https://www.youtube.com/embed/a6GA8u5stUo"
-   frameborder="0"
-   allowfullscreen>
-  </iframe>
-</section>
-
-<section>
-  <h2>Jogo Educativo</h2>
-
-  <a href="https://ecokids.net/pt/" target="_blank">
-
-    <button>
-      Jogar
-    </button>
-
-  </a>
-</section>
-
-<section>
-  <h2>Som da Natureza</h2>
-
-  <audio controls>
-
-    <source
-     src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-     type="audio/mpeg">
-
-  </audio>
-</section>
-
-</body>
-</html>
+    <section>
+      <h2>Som da Natureza</h2>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio tag.
+      </audio>
+    </section>
+  </main>
